@@ -48,6 +48,8 @@ export interface KeyPressActionPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
+    renderMode: "design" | "xray" | "structure";
+    translate: (text: string) => string;
     watchMode: WatchModeEnum;
     debug: boolean;
     content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
